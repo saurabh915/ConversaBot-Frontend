@@ -65,7 +65,7 @@ function Register() {
     if (!hasError) {
       try {
         await axios.post("http://localhost:8085/api/v1/employee/save", {
-        username: formData.fname,
+        employeename: formData.fname +' '+ formData.lname,
         email: formData.email,
         password: formData.password,
         });
