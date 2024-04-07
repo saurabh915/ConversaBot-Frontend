@@ -27,6 +27,53 @@
   }
 
   .chatbot-messages{
-    height: 191px;
+    height: 354px;
+    display: flex;
+    flex-direction: column;
     overflow: auto;
+    gap: 30px;
   }
+
+  .modal{
+    top: -196px;
+    height: 125%;
+  }
+  .modal-body{
+    height: 442px;
+  }
+
+  .category{
+    position: relative;
+    display: flex;
+  gap: 27px;
+  }
+
+  .orders-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .orders-table th, .orders-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .orders-table th {
+    background-color: #f2f2f2;
+  }
+
+
+  .field{
+display: flex;
+flex-direction: row;
+gap: 10px;
+  }
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+

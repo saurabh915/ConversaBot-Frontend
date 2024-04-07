@@ -5,14 +5,19 @@ import Login from './Components/Login/Login';
 import { BrowserRouter as Router, Routes, Route } from"react-router-dom"; 
 // import Signuppagetwo from './Components/Signuppagetwo'
 import ChatBot from './Components/ChatBot/ChatBot'
-
+import theme from './Components/theme';
+import { ThemeProvider } from '@mui/styles';
+import Navbar from './Components/Navbar/Navbar';
 function App() {
   return (
+    <ThemeProvider theme ={theme}>
+      
     <div className="App">
    {/* <Register/> */}
    <Router>
+   <Navbar/>
 <Routes>
-<Route  path='/' element={<Register/>}></Route>
+<Route  path='/register' element={<Register/>}></Route>
 {/* <Route exact path='/login' element={<Login/>}></Route> */}
 
 </Routes>
@@ -28,6 +33,7 @@ function App() {
    </Router>
    {/* <Signuppagetwo/> */}
     </div>
+    </ThemeProvider>
   );
 }
 
